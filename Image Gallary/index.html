@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lightbox Image Gallery</title>
+    <link rel="stylesheet" href="lightbox.css">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+        }
+        .container{
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 50px 8%;
+        }
+        .gallery{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 30px;
+        }
+        .gallery img{
+            width: 100%;
+        }
+    </style>
+</head> 
+<body>
+    <div class="container">
+    <div class="gallery">
+        <a href="Images/Img1.jpg" data-lightbox="models" data-title="Caption1">
+            <img src="Images/Img1.jpg">
+        </a>
+        <a href="Images/Img2.jpg" data-lightbox="models" data-title="Caption2">
+            <img src="Images/Img2.jpg">
+        </a>
+        <a href="Images/Img3.jpg" data-lightbox="models" data-title="Caption3">
+            <img src="Images/Img3.jpg">
+        </a>
+        <a href="Images/Img4.jpg" data-lightbox="models" data-title="Caption4">
+            <img src="Images/Img4.jpg">
+        </a>
+        <a href="Images/Img5.jpg" data-lightbox="models" data-title="Caption5">
+            <img src="Images/Img5.jpg">
+        </a>
+        <a href="Images/Img6.jpg" data-lightbox="models" data-title="Caption6">
+            <img src="Images/Img6.jpg">
+        </a>
+        <a href="Images/Img7.jpg" data-lightbox="models" data-title="Caption7">
+            <img src="Images/Img7.jpg">
+        </a>
+        <a href="Images/Img8.jpg" data-lightbox="models" data-title="Caption8">
+            <img src="Images/Img8.jpg">
+        </a>
+    </div>
+    </div>
+    <script src="lightbox-plus-jquery.js"></script>
+</body>
+</html>

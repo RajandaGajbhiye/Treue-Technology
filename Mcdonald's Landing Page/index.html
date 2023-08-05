@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>McDonald's Landing Page</title>
+  <style>
+      body,h1,h2,h3,p,ul,li{
+        margin: 0;
+        padding: 0;
+    }
+      body{
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+    }
+      header{
+        background-color: #FEE100;
+        padding: 10px 20px;
+    }
+      nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .logo img{
+        height: 50px;
+    }
+    .menu li{
+        display: inline-block;
+        margin-right: 20px;
+    }
+    .menu li:last-child{
+        margin-right: 0;
+    }
+    .menu a{
+        text-decoration: none;
+        color: #333;
+    }
+    .hero{
+        text-align: center;
+        background-image: url('images/hero-background.jpg');
+        background-size: cover;
+        color: #fff;
+        padding: 100px 20px;
+    }
+    .hero h1{
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
+    .hero p{
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+    .hero .btn{
+        display: inline-block;
+        background-color: #FEE100;
+        color: #333;
+        padding: 10px 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+    }
+    .menu-items{
+        text-align: center;
+        padding: 50px 20px;
+    }
+    .menu-item{
+        margin-bottom: 30px;
+    }
+    .menu-item img{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+    }
+    .menu-item h3{
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .menu-item p{
+        font-size: 16px;
+    }
+    @media (max-width: 768px){
+        .menu{
+            display: none;
+        }
+        .menu-items{
+            padding: 20px;
+        }
+    }
+    @media (max-width: 480px){
+        .hero h1{
+            font-size: 24px;
+        }
+        .hero p{
+            font-size: 16px;
+        }
+        .menu-item img{
+            width: 150px;
+            height: 150px;
+        }
+        .menu-item h3{
+            font-size: 20px;
+        }
+        .menu-item p{
+            font-size: 14px;
+        }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">
+        <img src="images/Logo.png" alt="McDonald's Logo">
+      </div>
+      <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Locations</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section class="hero">
+      <h1>Welcome to McDonald's</h1>
+      <p>Enjoy our delicious burgers and fries!</p>
+      <a href="#" class="btn">Order Now</a>
+    </section>
+    
+    <section class="menu-items">
+      <h2>Our Menu</h2>
+      <div class="menu-item">
+        <img src="images/Combo.png" alt="Combo">
+        <h3>Mexican McAloo Tikki</h3>
+        <p>Special Combo of Veg cheesy burger with McCoke & crispy fries.</p>
+      </div>
+      <div class="menu-item">
+        <img src="images/Burger.png" alt="Burger">
+        <h3>Deluxe Burger</h3>
+        <p>Our classic burger with cheese, lettuce, and special sauce.</p>
+      </div>
+      <div class="menu-item">
+        <img src="images/Fries.png" alt="Fries">
+        <h3>Fries</h3>
+        <p>Golden and crispy fries seasoned to perfection.</p>
+      </div>
+      <!-- Add more menu items here -->
+    </section>
+  </main>
+</body>
+</html>
